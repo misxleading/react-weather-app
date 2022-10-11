@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #e59500;
+  --main-font: inherit;
+  --secondary-font-color: rgb(103, 103, 103, 0.9);
+  --secondary-font-size: 14px;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.city-input {
+  border-radius: 10px;
+  border: thin solid #eaecf0;
+  width: 63%;
+  height: 48px;
+  padding-left: 8px;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.search-city,
+button {
+  border-radius: 10px;
+  border: none;
+  height: 48px;
+  width: 15%;
+  background-color: var(--primary-color);
+  color: #ffff;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: inherit;
+}
+@media (max-width: 660px) {
+  .all-app {
+    width: 80%;
+    padding: 24px;
+  }
+  .city-input,
+  .search-city,
+  button {
+    font-size: 12px;
+  }
+}
