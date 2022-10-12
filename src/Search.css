@@ -1,9 +1,4 @@
-:root {
-  --primary-color: #e59500;
-  --main-font: inherit;
-  --secondary-font-color: rgb(103, 103, 103, 0.9);
-  --secondary-font-size: 14px;
-}
+
 h3 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;

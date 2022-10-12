@@ -1,0 +1,8 @@
+.footer {
+  text-align: center;
+  font-size: var(--secondary-font-size);
+  margin-top: 0;
+}
+a {
+  color: var(--primary-color);
+}

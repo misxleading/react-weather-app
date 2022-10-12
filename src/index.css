@@ -1,1 +1,9 @@
-
+:root {
+  --primary-color: #e59500;
+  --main-font: inherit;
+  --secondary-font-color: rgb(103, 103, 103, 0.9);
+  --secondary-font-size: 14px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
