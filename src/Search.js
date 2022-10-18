@@ -32,7 +32,6 @@ export default function Search() {
   if (loading) {
     return (
       <div className="Search">
-        <h3> Weather App</h3>
         <form className="search" id="search-form" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -58,7 +57,6 @@ export default function Search() {
   } else {
     return (
       <div>
-        <h3> Weather App</h3>
         <form className="search" id="search-form" onSubmit={handleSubmit}>
           <input
             type="text"

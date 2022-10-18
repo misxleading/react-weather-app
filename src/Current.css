@@ -1,0 +1,89 @@
+.current {
+  display: flex;
+  flex-direction: row;
+}
+.selected-city {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+.selected-city h1 {
+  margin: 8px 0;
+  font-size: 40px;
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+
+.date {
+  color: rgb(103, 103, 103);
+  font-size: var(--secondary-font-size);
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.icon {
+  height: 48px;
+  width: 48px;
+}
+.icon-current {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
+}
+.icon-current a {
+  text-decoration: none;
+}
+.temp {
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0;
+}
+.description {
+  color: var(--secondary-font-color);
+  font-size: var(--secondary-font-size);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.characterictics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 8;
+  flex-wrap: wrap;
+  margin-top: 46px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  flex: 33%;
+  align-items: center;
+  text-align: center;
+}
+
+.item h5 {
+  margin: 0 0 8px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+.item p {
+  margin: 0 16px;
+}
+
+.add {
+  color: var(--secondary-font-color);
+  font-size: var(--secondary-font-size);
+  font-weight: 400;
+  line-height: 1.5;
+}

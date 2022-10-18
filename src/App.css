@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #e59500;
+  --main-font: inherit;
+  --secondary-font-color: rgb(103, 103, 103, 0.9);
+  --secondary-font-size: 14px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.all-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 526px;
+  border-radius: 20px;
+  border: thin solid #eaecf0;
+  box-shadow: 0px 2px 4px -2px #1018280f;
+  box-shadow: 0px 4px 8px -2px #1018281a;
+  padding: 32px;
+  margin: 36px auto 0;
+}
