@@ -5,22 +5,22 @@ import Current from "./Current";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
-  const [city, setCity] = useState(props.city);
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     console.log(response);
     setWeatherData({
+      date: new Date(response.data.time * 1000),
       ready: true,
       coordinates: response.data.coordinates,
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
-      date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       icon: response.data.condition.icon,
       wind: response.data.wind.speed,
       city: response.data.city,
-      high: response.data.temperature.max,
-      low: response.data.temperature.min,
+      feels_like: response.data.temperature.feels_like,
+      pressure: response.data.temperature.pressure,
     });
   }
 
@@ -34,8 +34,8 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = "eac360db5fc86ft86450f3693e73o43f";
-    let apiUrl = `https://api.shecodes.io/v1/weather/current?query=${city}&key=${apiKey}&units=metric`;
+    const apiKey = `99db4fc42tafb54418o7ed93b9043275`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
 

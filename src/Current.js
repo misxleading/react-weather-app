@@ -1,5 +1,6 @@
 import React from "react";
 import "./Current.css";
+import Date from "./Date";
 
 export default function Current(props) {
   return (
@@ -7,7 +8,11 @@ export default function Current(props) {
       <div className="selected-city">
         <h1>{props.data.city}</h1>
         <p className="date">
-          Updated: <span>Day, 00, Month, 00:00</span>
+          Updated:{" "}
+          <span>
+            {" "}
+            <Date date={props.data.date} />
+          </span>
         </p>
         <div className="icon-current">
           <img
@@ -33,28 +38,21 @@ export default function Current(props) {
 
       <div className="characterictics">
         <div className="item">
-          <h5 id="high">{Math.round(props.data.high)}°C</h5>
-          <p className="add">High</p>
+          <h5 id="high">{Math.round(props.data.feels_like)}°C</h5>
+          <p className="add">Feels like</p>
         </div>
         <div className="item">
-          <h5 id="wind">16kmph</h5>
+          <h5 id="wind">{Math.round(props.data.wind)}kmph</h5>
           <p className="add">Wind</p>
         </div>
         <div className="item">
-          <h5 id="sunrise">04:49</h5>
-          <p className="add">Sunrise</p>
+          <h5 id="sunrise">{props.data.pressure}</h5>
+          <p className="add">Pressure</p>
         </div>
-        <div className="item">
-          <h5 id="low">{Math.round(props.data.low)}°C</h5>
-          <p className="add">Low</p>
-        </div>
+
         <div className="item">
           <h5 id="rain">{props.data.humidity}%</h5>
           <p className="add">Humidity</p>
-        </div>
-        <div className="item">
-          <h5 id="sunset">21:13</h5>
-          <p className="add">Sunset</p>
         </div>
       </div>
     </div>
