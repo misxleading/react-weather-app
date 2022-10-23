@@ -23,13 +23,10 @@ export default function Current(props) {
           <p className="temp">
             <span id="temp">{Math.round(props.data.temperature)}</span>
             <span>°</span>
-            <a id="celsius" rel="noreferrer" className="active">
+            <span id="celsius" className="active">
               C
-            </a>
-            /
-            <a id="fahrenheit" rel="noreferrer">
-              F
-            </a>
+            </span>
+            /<span id="fahrenheit">F</span>
           </p>
         </div>
 

@@ -39,7 +39,7 @@
 .active:hover {
   text-decoration: none;
 }
-.icon-current a {
+.icon-current span {
   text-decoration: none;
 }
 .temp {
