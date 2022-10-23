@@ -2,7 +2,6 @@ import React from "react";
 import "./Current.css";
 import Date from "./Date";
 
-
 export default function Current(props) {
   return (
     <div className="current">
@@ -24,11 +23,11 @@ export default function Current(props) {
           <p className="temp">
             <span id="temp">{Math.round(props.data.temperature)}</span>
             <span>°</span>
-            <a id="celsius" href="" className="active">
+            <a id="celsius" rel="noreferrer" className="active">
               C
             </a>
             /
-            <a id="fahrenheit" href="">
+            <a id="fahrenheit" rel="noreferrer">
               F
             </a>
           </p>
