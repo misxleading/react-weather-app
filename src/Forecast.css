@@ -1,0 +1,29 @@
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card {
+  border-radius: 25px;
+  border: thin solid #eaecf0;
+  box-shadow: 0px 2px 4px -2px #1018280f;
+  box-shadow: 0px 4px 8px -2px #1018281a;
+  text-align: center;
+  margin: 8px;
+  padding: 6px;
+  height: auto;
+  width: 74px;
+}
+.card-date {
+  color: var(--secondary-font-color);
+  font-size: var(--secondary-font-size);
+  margin: 0 0 16px;
+}
+.card-temp {
+  font-family: var(--main-font);
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin: 12px;
+}

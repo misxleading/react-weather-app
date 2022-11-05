@@ -28,16 +28,8 @@
 .icon-current {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  gap: 16px;
   align-items: center;
-}
-.active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-.active:hover {
-  text-decoration: none;
 }
 .icon-current span {
   text-decoration: none;

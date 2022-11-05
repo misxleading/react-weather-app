@@ -1,6 +1,7 @@
 import React from "react";
 import "./Current.css";
 import Date from "./Date";
+import Icon from "./Icon.js";
 
 export default function Current(props) {
   return (
@@ -15,18 +16,13 @@ export default function Current(props) {
           </span>
         </p>
         <div className="icon-current">
-          <img
-            className="icon"
-            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/325/cloud-with-lightning-and-rain_26c8-fe0f.png"
-            alt=""
-          />
+          <Icon code={props.data.icon} size={32} />
           <p className="temp">
             <span id="temp">{Math.round(props.data.temperature)}</span>
             <span>°</span>
             <span id="celsius" className="active">
               C
             </span>
-            /<span id="fahrenheit">F</span>
           </p>
         </div>
 

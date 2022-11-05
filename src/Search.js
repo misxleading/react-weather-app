@@ -66,7 +66,6 @@ export default function Search() {
             onChange={updateCity}
           />
           <input type="submit" value="Search" className="search-city" />
-          <button>Current</button>
         </form>
       </div>
     );

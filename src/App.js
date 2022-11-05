@@ -8,6 +8,7 @@ function App() {
     <div>
       <div className="all-app">
         <Weather defaultCity="Paris" />
+        
       </div>
       <Footer />
     </div>
